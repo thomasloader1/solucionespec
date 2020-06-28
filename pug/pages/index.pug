@@ -1,0 +1,7 @@
+extends ../templates/template.pug
+block append config
+    - titlePage = "Inicio"
+
+block append content
+    section#home.bg-dark
+        include ./home.pug

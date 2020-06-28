@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'home.scss';
+.d-grid {
+    display: grid;
+}
+
+@for $i from 0 through 100 {
+    .spacing-#{$i} {
+        letter-spacing: #{$i}px;
+    }
+    .font-#{$i} {
+        font-size: #{$i}rem;
+    }
+}
