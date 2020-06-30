@@ -1,0 +1,21 @@
+.img-nosotros{
+    background: {
+        image: url("../img/assets/home.jpg");
+        position: center;
+        size: cover;
+    }
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    position: relative;
+    &:before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.7);
+    }
+}
