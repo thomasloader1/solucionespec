@@ -29,3 +29,18 @@ mixin modal(content)
             </div>
         </div>
     </div>
+
+mixin card(title, image, description)
+    div(class="col-md-6 col-sm-12 col-lg-12 col-12 mb-4")
+        article
+            .card.align-items-center
+                .card-header
+                    h2.card-tittle= title
+                img(src=`../img/assets/${image}` class="card-img-top")
+                div(class="card-body")
+                    p.card-text= description
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Ver Mas</button>
+        
+                
+                
+            

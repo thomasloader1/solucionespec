@@ -16,9 +16,19 @@
             p Nuestros diseños se incorporan de manera fácil a cualquier lugar en donde haya ingreso de personas. Mediante el uso de micro aspersores, se impulsa una solución sanitizante inocua, incolora e inodora diluida en agua que cubre el 100% de la superficie corporal. Quedando en sólo 5 segundos cubierto con una barrera anti bacterial garantizada
     .row
         .col-12
-            p Se puede utilizar cualquier antibacterial aprobado por ANMAT. Los siguientes mencionados son de venta libre:
-        .col-6
+            p Se puede utilizar cualquier antibacterial aprobado por ANMAT. Los siguientes mencionados son de venta libre:   
+        .col-12
             +getListado(listados.tercero)
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Launch demo modal</button>
-            +modal("Axel chupa penes")
-
+            
+    .row
+        
+        +card("Totem", "totemUso.png", desciption) 
+        +modal('Contenido Modal')
+        
+        +card("Portico", "porticoUso.png", desciption) 
+        +modal('Contenido Modal')
+        
+        +card("Cabina", "cabinaUso.png", desciption) 
+        +modal('Contenido Modal')
+        
+           
