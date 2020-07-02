@@ -9,7 +9,7 @@ mixin getListado(objLista)
                 
                 li.ml-2.my-3= obj.name 
 
-mixin modal(content)
+mixin modal(objModal)
     <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -20,7 +20,7 @@ mixin modal(content)
                     </button>
                 </div>
                 <div class="modal-body">
-                    p= content
+                    +contentModal(objModal.features)
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -31,35 +31,15 @@ mixin modal(content)
     </div>
 
 mixin card(title, image, description)
-    div(class="col-md-6 col-sm-12 col-lg-12 col-12 mb-4")
-        article
-            .card.align-items-center
-                .card-header
-                    h2.card-tittle= title
-                img(src=`../img/assets/${image}` class="card-img-top")
-                div(class="card-body")
-                    p.card-text= description
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Ver Mas</button>
+    .col-12.col-sm-12.col-md-6.mb-4
+        .card.align-items-center
+            .card-header
+                h2.card-tittle= title
+            img(src=`../img/assets/${image}`, class="card-img-top img-fluid")
+            .card-body
+                p.card-text= description
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Ver Mas</button>
 
-mixin contentModal(objModal)
-    .col-12.text-center
-       each obj in objModal
-            h1= `${obj.tittle}`
-    .col-6
-        each obj in objModal
-            p=`${obj.text}`
-        ul.list-unstyled
-        each obj in objModal
-            .d-flex.align-items-center
-                if(obj.caracteristicas.icon != "fas fa-circle")
-                    img(src=`${obj.caracteristicas.icon}`, alt="", width="30", height="30")
-                else
-                    i(class=`${obj.icon} fa-sm`)
-                
-                li.ml-2.my-3= obj.caracteristicas.name 
-    .col-6
-        each obj in objModal
-            img(src=`../img/assets/ejemplos/${obj.img}` class="img-fluid")     
-                
-                
-            
+mixin contentModal(content)
+    each c in content
+        p= c.name
