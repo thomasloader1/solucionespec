@@ -40,7 +40,26 @@ mixin card(title, image, description)
                 div(class="card-body")
                     p.card-text= description
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Ver Mas</button>
-        
+
+mixin contentModal(objModal)
+    .col-12.text-center
+       each obj in objModal
+            h1= `${obj.tittle}`
+    .col-6
+        each obj in objModal
+            p=`${obj.text}`
+        ul.list-unstyled
+        each obj in objModal
+            .d-flex.align-items-center
+                if(obj.caracteristicas.icon != "fas fa-circle")
+                    img(src=`${obj.caracteristicas.icon}`, alt="", width="30", height="30")
+                else
+                    i(class=`${obj.icon} fa-sm`)
+                
+                li.ml-2.my-3= obj.caracteristicas.name 
+    .col-6
+        each obj in objModal
+            img(src=`../img/assets/ejemplos/${obj.img}` class="img-fluid")     
                 
                 
             
