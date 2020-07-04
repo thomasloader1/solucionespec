@@ -1,12 +1,12 @@
 mixin getListado(objLista)
-    ul.list-unstyled
+    
         each obj in objLista
             .d-flex.align-items-center
                 if(obj.icon != "fas fa-circle")
                     img(src=`${obj.icon}`, alt="", width="30", height="30")
                 else
                     i(class=`${obj.icon} fa-sm`)
-                
+
                 li.ml-2.my-3= obj.name 
 
 mixin modal(objModal)
@@ -31,14 +31,15 @@ mixin modal(objModal)
     </div>
 
 mixin card(title, image, description)
-    .col-12.col-sm-12.col-md-6.mb-4
+    .col-12.col-sm-12.col-md-6.mb-4.d-flex.contenedor-card
         .card.align-items-center
             .card-header
                 h2.card-tittle= title
-            img(src=`../img/assets/${image}`, class="card-img-top img-fluid")
+            img(src=`img/assets/${image}`, class="card-img-top img-fluid")
             .card-body
                 p.card-text= description
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Ver Mas</button>
+                .contenedor-boton
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Ver Mas</button>
 
 mixin contentModal(content)
     each c in content

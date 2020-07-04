@@ -5,11 +5,13 @@
     .col-12
         p excelente solución para incrementar las medidas de higiene en el ingreso a aquellos espacios de alta circulación tales como:   
 .row.mt-0
-    .col-12
-        +getListado(listados.primero)
+    div(class="col-12 d-flex" id="primer-lista")
+        ul.list-unstyled.d-flex    
+            +getListado(listados.primero)
 .row
     .col-12.caracteristicas
-        +getListado(listados.segundo)
+        ul.list-unstyled  
+            +getListado(listados.segundo)
 .row
     .col-12.descripcion-modulos
         p Nuestros diseños se incorporan de manera fácil a cualquier lugar en donde haya ingreso de personas. Mediante el uso de micro aspersores, se impulsa una solución sanitizante inocua, incolora e inodora diluida en agua que cubre el 100% de la superficie corporal. Quedando en sólo 5 segundos cubierto con una barrera anti bacterial garantizada
@@ -17,9 +19,14 @@
     .col-12
         p Se puede utilizar cualquier antibacterial aprobado por ANMAT. Los siguientes mencionados son de venta libre:   
     .col-12
-        +getListado(listados.tercero)
+        ul.list-unstyled    
+            +getListado(listados.tercero)
         
 .row
     
     +card("Totem", "totemUso.png", desciption) 
     +modal(contenidoModal.totem)
+    +card("Portico", "porticoUso.png", desciption) 
+    +modal(contenidoModal.portico)
+    +card("Cabina", "cabinaUso.png", desciption)
+    +modal(contenidoModal.cabina)

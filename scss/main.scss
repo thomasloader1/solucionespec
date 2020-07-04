@@ -1,16 +1,15 @@
-@import 'fonts';
-@import 'home.scss';
-@import 'nosotros.scss';
-
+@import "fonts";
+@import "modulos";
+@import "nosotros";
 .d-grid {
-    display: grid;
+  display: grid;
 }
 
 @for $i from 0 through 100 {
-    .spacing-#{$i} {
-        letter-spacing: #{$i}px;
-    }
-    .font-#{$i} {
-        font-size: #{$i}rem;
-    }
+  .spacing-#{$i} {
+    letter-spacing: #{$i}px;
+  }
+  .font-#{$i} {
+    font-size: #{$i}rem;
+  }
 }

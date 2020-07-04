@@ -1,63 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@300;400;700&display=swap");
-.oswald, .oswald-700, .oswald-600, .oswald-300 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-}
-.oswald-300 {
-  font-weight: 300;
-}
-.oswald-600 {
-  font-weight: 600;
-}
-.oswald-700 {
-  font-weight: 700;
-}
+.oswald, .oswald-300, .oswald-600, .oswald-700 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400; }
+  .oswald-300 {
+    font-weight: 300; }
+  .oswald-600 {
+    font-weight: 600; }
+  .oswald-700 {
+    font-weight: 700; }
 
-.open-sans, .open-sans-700, .open-sans-300 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
-.open-sans-300 {
-  font-weight: 300;
-}
-.open-sans-700 {
-  font-weight: 700;
-}
+.open-sans, .open-sans-300, .open-sans-700 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+  .open-sans-300 {
+    font-weight: 300; }
+  .open-sans-700 {
+    font-weight: 700; }
 
-.home, .home-bg {
-  height: 100%;
-  width: 100%;
-}
-.home-bg {
-  background-image: url("../img/banner-bg.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.home-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: minmax(200px, auto) 0px minmax(70px, auto);
-  grid-template-areas: "top" "center" "bottom";
-  height: 100%;
-  transition: all 0.5s ease-in-out;
-}
-.home-grid .item-grid-img {
-  align-self: end;
-  justify-self: center;
-  grid-area: top;
-}
-.home-grid .item-grid-content {
-  grid-area: center;
-  align-self: center;
+#primer-lista {
+  justify-content: center !important; }
+  #primer-lista ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center !important; }
+    #primer-lista ul li {
+      margin: 0 30px;
+      font-weight: bold; }
+
+.card-header {
+  background-color: #fff; }
+
+.contenedor-card {
+  display: flex; }
+
+.card {
   justify-content: center;
-}
-.home-grid .item-grid-menu {
-  display: flex;
-  align-self: start;
-  justify-content: center;
-  grid-area: bottom;
-  height: 100%;
-}
+  margin: auto;
+  max-width: 400px;
+  max-height: 600px; }
+  .card img {
+    max-width: 250px;
+    max-height: 290px; }
+  .card .contenedor-boton {
+    display: flex; }
+    .card .contenedor-boton button {
+      margin: auto; }
 
 .img-nosotros {
   background-image: url("../img/assets/home.jpg");
@@ -65,829 +52,624 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  position: relative;
-}
-.img-nosotros:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-}
+  position: relative; }
+  .img-nosotros:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7); }
 
 .d-grid {
-  display: grid;
-}
+  display: grid; }
 
 .spacing-0 {
-  letter-spacing: 0px;
-}
+  letter-spacing: 0px; }
 
 .font-0 {
-  font-size: 0rem;
-}
+  font-size: 0rem; }
 
 .spacing-1 {
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 .font-1 {
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .spacing-2 {
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
 
 .font-2 {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .spacing-3 {
-  letter-spacing: 3px;
-}
+  letter-spacing: 3px; }
 
 .font-3 {
-  font-size: 3rem;
-}
+  font-size: 3rem; }
 
 .spacing-4 {
-  letter-spacing: 4px;
-}
+  letter-spacing: 4px; }
 
 .font-4 {
-  font-size: 4rem;
-}
+  font-size: 4rem; }
 
 .spacing-5 {
-  letter-spacing: 5px;
-}
+  letter-spacing: 5px; }
 
 .font-5 {
-  font-size: 5rem;
-}
+  font-size: 5rem; }
 
 .spacing-6 {
-  letter-spacing: 6px;
-}
+  letter-spacing: 6px; }
 
 .font-6 {
-  font-size: 6rem;
-}
+  font-size: 6rem; }
 
 .spacing-7 {
-  letter-spacing: 7px;
-}
+  letter-spacing: 7px; }
 
 .font-7 {
-  font-size: 7rem;
-}
+  font-size: 7rem; }
 
 .spacing-8 {
-  letter-spacing: 8px;
-}
+  letter-spacing: 8px; }
 
 .font-8 {
-  font-size: 8rem;
-}
+  font-size: 8rem; }
 
 .spacing-9 {
-  letter-spacing: 9px;
-}
+  letter-spacing: 9px; }
 
 .font-9 {
-  font-size: 9rem;
-}
+  font-size: 9rem; }
 
 .spacing-10 {
-  letter-spacing: 10px;
-}
+  letter-spacing: 10px; }
 
 .font-10 {
-  font-size: 10rem;
-}
+  font-size: 10rem; }
 
 .spacing-11 {
-  letter-spacing: 11px;
-}
+  letter-spacing: 11px; }
 
 .font-11 {
-  font-size: 11rem;
-}
+  font-size: 11rem; }
 
 .spacing-12 {
-  letter-spacing: 12px;
-}
+  letter-spacing: 12px; }
 
 .font-12 {
-  font-size: 12rem;
-}
+  font-size: 12rem; }
 
 .spacing-13 {
-  letter-spacing: 13px;
-}
+  letter-spacing: 13px; }
 
 .font-13 {
-  font-size: 13rem;
-}
+  font-size: 13rem; }
 
 .spacing-14 {
-  letter-spacing: 14px;
-}
+  letter-spacing: 14px; }
 
 .font-14 {
-  font-size: 14rem;
-}
+  font-size: 14rem; }
 
 .spacing-15 {
-  letter-spacing: 15px;
-}
+  letter-spacing: 15px; }
 
 .font-15 {
-  font-size: 15rem;
-}
+  font-size: 15rem; }
 
 .spacing-16 {
-  letter-spacing: 16px;
-}
+  letter-spacing: 16px; }
 
 .font-16 {
-  font-size: 16rem;
-}
+  font-size: 16rem; }
 
 .spacing-17 {
-  letter-spacing: 17px;
-}
+  letter-spacing: 17px; }
 
 .font-17 {
-  font-size: 17rem;
-}
+  font-size: 17rem; }
 
 .spacing-18 {
-  letter-spacing: 18px;
-}
+  letter-spacing: 18px; }
 
 .font-18 {
-  font-size: 18rem;
-}
+  font-size: 18rem; }
 
 .spacing-19 {
-  letter-spacing: 19px;
-}
+  letter-spacing: 19px; }
 
 .font-19 {
-  font-size: 19rem;
-}
+  font-size: 19rem; }
 
 .spacing-20 {
-  letter-spacing: 20px;
-}
+  letter-spacing: 20px; }
 
 .font-20 {
-  font-size: 20rem;
-}
+  font-size: 20rem; }
 
 .spacing-21 {
-  letter-spacing: 21px;
-}
+  letter-spacing: 21px; }
 
 .font-21 {
-  font-size: 21rem;
-}
+  font-size: 21rem; }
 
 .spacing-22 {
-  letter-spacing: 22px;
-}
+  letter-spacing: 22px; }
 
 .font-22 {
-  font-size: 22rem;
-}
+  font-size: 22rem; }
 
 .spacing-23 {
-  letter-spacing: 23px;
-}
+  letter-spacing: 23px; }
 
 .font-23 {
-  font-size: 23rem;
-}
+  font-size: 23rem; }
 
 .spacing-24 {
-  letter-spacing: 24px;
-}
+  letter-spacing: 24px; }
 
 .font-24 {
-  font-size: 24rem;
-}
+  font-size: 24rem; }
 
 .spacing-25 {
-  letter-spacing: 25px;
-}
+  letter-spacing: 25px; }
 
 .font-25 {
-  font-size: 25rem;
-}
+  font-size: 25rem; }
 
 .spacing-26 {
-  letter-spacing: 26px;
-}
+  letter-spacing: 26px; }
 
 .font-26 {
-  font-size: 26rem;
-}
+  font-size: 26rem; }
 
 .spacing-27 {
-  letter-spacing: 27px;
-}
+  letter-spacing: 27px; }
 
 .font-27 {
-  font-size: 27rem;
-}
+  font-size: 27rem; }
 
 .spacing-28 {
-  letter-spacing: 28px;
-}
+  letter-spacing: 28px; }
 
 .font-28 {
-  font-size: 28rem;
-}
+  font-size: 28rem; }
 
 .spacing-29 {
-  letter-spacing: 29px;
-}
+  letter-spacing: 29px; }
 
 .font-29 {
-  font-size: 29rem;
-}
+  font-size: 29rem; }
 
 .spacing-30 {
-  letter-spacing: 30px;
-}
+  letter-spacing: 30px; }
 
 .font-30 {
-  font-size: 30rem;
-}
+  font-size: 30rem; }
 
 .spacing-31 {
-  letter-spacing: 31px;
-}
+  letter-spacing: 31px; }
 
 .font-31 {
-  font-size: 31rem;
-}
+  font-size: 31rem; }
 
 .spacing-32 {
-  letter-spacing: 32px;
-}
+  letter-spacing: 32px; }
 
 .font-32 {
-  font-size: 32rem;
-}
+  font-size: 32rem; }
 
 .spacing-33 {
-  letter-spacing: 33px;
-}
+  letter-spacing: 33px; }
 
 .font-33 {
-  font-size: 33rem;
-}
+  font-size: 33rem; }
 
 .spacing-34 {
-  letter-spacing: 34px;
-}
+  letter-spacing: 34px; }
 
 .font-34 {
-  font-size: 34rem;
-}
+  font-size: 34rem; }
 
 .spacing-35 {
-  letter-spacing: 35px;
-}
+  letter-spacing: 35px; }
 
 .font-35 {
-  font-size: 35rem;
-}
+  font-size: 35rem; }
 
 .spacing-36 {
-  letter-spacing: 36px;
-}
+  letter-spacing: 36px; }
 
 .font-36 {
-  font-size: 36rem;
-}
+  font-size: 36rem; }
 
 .spacing-37 {
-  letter-spacing: 37px;
-}
+  letter-spacing: 37px; }
 
 .font-37 {
-  font-size: 37rem;
-}
+  font-size: 37rem; }
 
 .spacing-38 {
-  letter-spacing: 38px;
-}
+  letter-spacing: 38px; }
 
 .font-38 {
-  font-size: 38rem;
-}
+  font-size: 38rem; }
 
 .spacing-39 {
-  letter-spacing: 39px;
-}
+  letter-spacing: 39px; }
 
 .font-39 {
-  font-size: 39rem;
-}
+  font-size: 39rem; }
 
 .spacing-40 {
-  letter-spacing: 40px;
-}
+  letter-spacing: 40px; }
 
 .font-40 {
-  font-size: 40rem;
-}
+  font-size: 40rem; }
 
 .spacing-41 {
-  letter-spacing: 41px;
-}
+  letter-spacing: 41px; }
 
 .font-41 {
-  font-size: 41rem;
-}
+  font-size: 41rem; }
 
 .spacing-42 {
-  letter-spacing: 42px;
-}
+  letter-spacing: 42px; }
 
 .font-42 {
-  font-size: 42rem;
-}
+  font-size: 42rem; }
 
 .spacing-43 {
-  letter-spacing: 43px;
-}
+  letter-spacing: 43px; }
 
 .font-43 {
-  font-size: 43rem;
-}
+  font-size: 43rem; }
 
 .spacing-44 {
-  letter-spacing: 44px;
-}
+  letter-spacing: 44px; }
 
 .font-44 {
-  font-size: 44rem;
-}
+  font-size: 44rem; }
 
 .spacing-45 {
-  letter-spacing: 45px;
-}
+  letter-spacing: 45px; }
 
 .font-45 {
-  font-size: 45rem;
-}
+  font-size: 45rem; }
 
 .spacing-46 {
-  letter-spacing: 46px;
-}
+  letter-spacing: 46px; }
 
 .font-46 {
-  font-size: 46rem;
-}
+  font-size: 46rem; }
 
 .spacing-47 {
-  letter-spacing: 47px;
-}
+  letter-spacing: 47px; }
 
 .font-47 {
-  font-size: 47rem;
-}
+  font-size: 47rem; }
 
 .spacing-48 {
-  letter-spacing: 48px;
-}
+  letter-spacing: 48px; }
 
 .font-48 {
-  font-size: 48rem;
-}
+  font-size: 48rem; }
 
 .spacing-49 {
-  letter-spacing: 49px;
-}
+  letter-spacing: 49px; }
 
 .font-49 {
-  font-size: 49rem;
-}
+  font-size: 49rem; }
 
 .spacing-50 {
-  letter-spacing: 50px;
-}
+  letter-spacing: 50px; }
 
 .font-50 {
-  font-size: 50rem;
-}
+  font-size: 50rem; }
 
 .spacing-51 {
-  letter-spacing: 51px;
-}
+  letter-spacing: 51px; }
 
 .font-51 {
-  font-size: 51rem;
-}
+  font-size: 51rem; }
 
 .spacing-52 {
-  letter-spacing: 52px;
-}
+  letter-spacing: 52px; }
 
 .font-52 {
-  font-size: 52rem;
-}
+  font-size: 52rem; }
 
 .spacing-53 {
-  letter-spacing: 53px;
-}
+  letter-spacing: 53px; }
 
 .font-53 {
-  font-size: 53rem;
-}
+  font-size: 53rem; }
 
 .spacing-54 {
-  letter-spacing: 54px;
-}
+  letter-spacing: 54px; }
 
 .font-54 {
-  font-size: 54rem;
-}
+  font-size: 54rem; }
 
 .spacing-55 {
-  letter-spacing: 55px;
-}
+  letter-spacing: 55px; }
 
 .font-55 {
-  font-size: 55rem;
-}
+  font-size: 55rem; }
 
 .spacing-56 {
-  letter-spacing: 56px;
-}
+  letter-spacing: 56px; }
 
 .font-56 {
-  font-size: 56rem;
-}
+  font-size: 56rem; }
 
 .spacing-57 {
-  letter-spacing: 57px;
-}
+  letter-spacing: 57px; }
 
 .font-57 {
-  font-size: 57rem;
-}
+  font-size: 57rem; }
 
 .spacing-58 {
-  letter-spacing: 58px;
-}
+  letter-spacing: 58px; }
 
 .font-58 {
-  font-size: 58rem;
-}
+  font-size: 58rem; }
 
 .spacing-59 {
-  letter-spacing: 59px;
-}
+  letter-spacing: 59px; }
 
 .font-59 {
-  font-size: 59rem;
-}
+  font-size: 59rem; }
 
 .spacing-60 {
-  letter-spacing: 60px;
-}
+  letter-spacing: 60px; }
 
 .font-60 {
-  font-size: 60rem;
-}
+  font-size: 60rem; }
 
 .spacing-61 {
-  letter-spacing: 61px;
-}
+  letter-spacing: 61px; }
 
 .font-61 {
-  font-size: 61rem;
-}
+  font-size: 61rem; }
 
 .spacing-62 {
-  letter-spacing: 62px;
-}
+  letter-spacing: 62px; }
 
 .font-62 {
-  font-size: 62rem;
-}
+  font-size: 62rem; }
 
 .spacing-63 {
-  letter-spacing: 63px;
-}
+  letter-spacing: 63px; }
 
 .font-63 {
-  font-size: 63rem;
-}
+  font-size: 63rem; }
 
 .spacing-64 {
-  letter-spacing: 64px;
-}
+  letter-spacing: 64px; }
 
 .font-64 {
-  font-size: 64rem;
-}
+  font-size: 64rem; }
 
 .spacing-65 {
-  letter-spacing: 65px;
-}
+  letter-spacing: 65px; }
 
 .font-65 {
-  font-size: 65rem;
-}
+  font-size: 65rem; }
 
 .spacing-66 {
-  letter-spacing: 66px;
-}
+  letter-spacing: 66px; }
 
 .font-66 {
-  font-size: 66rem;
-}
+  font-size: 66rem; }
 
 .spacing-67 {
-  letter-spacing: 67px;
-}
+  letter-spacing: 67px; }
 
 .font-67 {
-  font-size: 67rem;
-}
+  font-size: 67rem; }
 
 .spacing-68 {
-  letter-spacing: 68px;
-}
+  letter-spacing: 68px; }
 
 .font-68 {
-  font-size: 68rem;
-}
+  font-size: 68rem; }
 
 .spacing-69 {
-  letter-spacing: 69px;
-}
+  letter-spacing: 69px; }
 
 .font-69 {
-  font-size: 69rem;
-}
+  font-size: 69rem; }
 
 .spacing-70 {
-  letter-spacing: 70px;
-}
+  letter-spacing: 70px; }
 
 .font-70 {
-  font-size: 70rem;
-}
+  font-size: 70rem; }
 
 .spacing-71 {
-  letter-spacing: 71px;
-}
+  letter-spacing: 71px; }
 
 .font-71 {
-  font-size: 71rem;
-}
+  font-size: 71rem; }
 
 .spacing-72 {
-  letter-spacing: 72px;
-}
+  letter-spacing: 72px; }
 
 .font-72 {
-  font-size: 72rem;
-}
+  font-size: 72rem; }
 
 .spacing-73 {
-  letter-spacing: 73px;
-}
+  letter-spacing: 73px; }
 
 .font-73 {
-  font-size: 73rem;
-}
+  font-size: 73rem; }
 
 .spacing-74 {
-  letter-spacing: 74px;
-}
+  letter-spacing: 74px; }
 
 .font-74 {
-  font-size: 74rem;
-}
+  font-size: 74rem; }
 
 .spacing-75 {
-  letter-spacing: 75px;
-}
+  letter-spacing: 75px; }
 
 .font-75 {
-  font-size: 75rem;
-}
+  font-size: 75rem; }
 
 .spacing-76 {
-  letter-spacing: 76px;
-}
+  letter-spacing: 76px; }
 
 .font-76 {
-  font-size: 76rem;
-}
+  font-size: 76rem; }
 
 .spacing-77 {
-  letter-spacing: 77px;
-}
+  letter-spacing: 77px; }
 
 .font-77 {
-  font-size: 77rem;
-}
+  font-size: 77rem; }
 
 .spacing-78 {
-  letter-spacing: 78px;
-}
+  letter-spacing: 78px; }
 
 .font-78 {
-  font-size: 78rem;
-}
+  font-size: 78rem; }
 
 .spacing-79 {
-  letter-spacing: 79px;
-}
+  letter-spacing: 79px; }
 
 .font-79 {
-  font-size: 79rem;
-}
+  font-size: 79rem; }
 
 .spacing-80 {
-  letter-spacing: 80px;
-}
+  letter-spacing: 80px; }
 
 .font-80 {
-  font-size: 80rem;
-}
+  font-size: 80rem; }
 
 .spacing-81 {
-  letter-spacing: 81px;
-}
+  letter-spacing: 81px; }
 
 .font-81 {
-  font-size: 81rem;
-}
+  font-size: 81rem; }
 
 .spacing-82 {
-  letter-spacing: 82px;
-}
+  letter-spacing: 82px; }
 
 .font-82 {
-  font-size: 82rem;
-}
+  font-size: 82rem; }
 
 .spacing-83 {
-  letter-spacing: 83px;
-}
+  letter-spacing: 83px; }
 
 .font-83 {
-  font-size: 83rem;
-}
+  font-size: 83rem; }
 
 .spacing-84 {
-  letter-spacing: 84px;
-}
+  letter-spacing: 84px; }
 
 .font-84 {
-  font-size: 84rem;
-}
+  font-size: 84rem; }
 
 .spacing-85 {
-  letter-spacing: 85px;
-}
+  letter-spacing: 85px; }
 
 .font-85 {
-  font-size: 85rem;
-}
+  font-size: 85rem; }
 
 .spacing-86 {
-  letter-spacing: 86px;
-}
+  letter-spacing: 86px; }
 
 .font-86 {
-  font-size: 86rem;
-}
+  font-size: 86rem; }
 
 .spacing-87 {
-  letter-spacing: 87px;
-}
+  letter-spacing: 87px; }
 
 .font-87 {
-  font-size: 87rem;
-}
+  font-size: 87rem; }
 
 .spacing-88 {
-  letter-spacing: 88px;
-}
+  letter-spacing: 88px; }
 
 .font-88 {
-  font-size: 88rem;
-}
+  font-size: 88rem; }
 
 .spacing-89 {
-  letter-spacing: 89px;
-}
+  letter-spacing: 89px; }
 
 .font-89 {
-  font-size: 89rem;
-}
+  font-size: 89rem; }
 
 .spacing-90 {
-  letter-spacing: 90px;
-}
+  letter-spacing: 90px; }
 
 .font-90 {
-  font-size: 90rem;
-}
+  font-size: 90rem; }
 
 .spacing-91 {
-  letter-spacing: 91px;
-}
+  letter-spacing: 91px; }
 
 .font-91 {
-  font-size: 91rem;
-}
+  font-size: 91rem; }
 
 .spacing-92 {
-  letter-spacing: 92px;
-}
+  letter-spacing: 92px; }
 
 .font-92 {
-  font-size: 92rem;
-}
+  font-size: 92rem; }
 
 .spacing-93 {
-  letter-spacing: 93px;
-}
+  letter-spacing: 93px; }
 
 .font-93 {
-  font-size: 93rem;
-}
+  font-size: 93rem; }
 
 .spacing-94 {
-  letter-spacing: 94px;
-}
+  letter-spacing: 94px; }
 
 .font-94 {
-  font-size: 94rem;
-}
+  font-size: 94rem; }
 
 .spacing-95 {
-  letter-spacing: 95px;
-}
+  letter-spacing: 95px; }
 
 .font-95 {
-  font-size: 95rem;
-}
+  font-size: 95rem; }
 
 .spacing-96 {
-  letter-spacing: 96px;
-}
+  letter-spacing: 96px; }
 
 .font-96 {
-  font-size: 96rem;
-}
+  font-size: 96rem; }
 
 .spacing-97 {
-  letter-spacing: 97px;
-}
+  letter-spacing: 97px; }
 
 .font-97 {
-  font-size: 97rem;
-}
+  font-size: 97rem; }
 
 .spacing-98 {
-  letter-spacing: 98px;
-}
+  letter-spacing: 98px; }
 
 .font-98 {
-  font-size: 98rem;
-}
+  font-size: 98rem; }
 
 .spacing-99 {
-  letter-spacing: 99px;
-}
+  letter-spacing: 99px; }
 
 .font-99 {
-  font-size: 99rem;
-}
+  font-size: 99rem; }
 
 .spacing-100 {
-  letter-spacing: 100px;
-}
+  letter-spacing: 100px; }
 
 .font-100 {
-  font-size: 100rem;
-}
+  font-size: 100rem; }
 
 /*# sourceMappingURL=main.css.map */
