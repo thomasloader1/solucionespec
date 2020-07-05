@@ -1,23 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-dark black ">
+<nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            img(src="../img/svg/logo-pec-text.svg",height="60",alt="Constructora PEC")
+            img(src="img/svg/logo-pec-text.svg",height="60",alt="Constructora PEC")
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"> <img src="img/assets/menu.png",height="60"/></span>
         </button>
         <div class="collapse navbar-collapse open-sans text-uppercase spacing-3" id="basicExampleNav">
             <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
+                    <li class="nav-item" >
+                        
                         <a class="nav-link" href="#">Nosotros</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link nav-item dropdown-toggle" id="navbarDropdown" href="#" data-toggle="dropdown">Modulos Sanitizantes</a>
-                        div(class="dropdown-menu text-center"  aria-labelledby="navbarDropdown")
+                    <li class="nav-item " id="m-desplegable" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+                        
+                        <a class="navbar-toggler"   data-toggle="collapse" data-target="#basicExampleNav2" aria-controls="basicExampleNav2" aria-expanded="false" aria-label="Toggle navigation">Modulos Sanitizantes <i class="fa" aria-hidden="true"></i></a>
+                        div(class="collapse navbar-collapse open-sans text-uppercase spacing-2" id="basicExampleNav2")
                             
                              
-                                a(class="dropdown-item" href="#") Totem
+                                a(class="dropdown-item py-3 px-0 px-lg-3 js-scroll-trigger" href="#totem") Totem
                              
                                 a(class="dropdown-item py-3 px-0 px-lg-3 js-scroll-trigger" href="#") Pórtico
                          

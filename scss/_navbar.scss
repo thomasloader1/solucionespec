@@ -1,0 +1,31 @@
+#navbar {
+  background-color: #61c3df;
+  .container {
+    a {
+      color: #fff;
+      margin: 0;
+      padding: 10px 0px;
+      text-align: left;
+      font-size: 1em;
+    }
+
+    #basicExampleNav {
+      #m-desplegable {
+        #basicExampleNav2 {
+          a {
+            font-size: 0.8em;
+            text-align: left;
+            color: #444;
+          }
+        }
+        [data-toggle="collapse"] .fa:before {
+          content: "\f139";
+        }
+
+        [data-toggle="collapse"].collapsed .fa:before {
+          content: "\f13a";
+        }
+      }
+    }
+  }
+}

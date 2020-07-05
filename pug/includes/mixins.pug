@@ -1,49 +1,114 @@
 mixin getListado(objLista)
-    ul.list-unstyled
+    
         each obj in objLista
             .d-flex.align-items-center
                 if(obj.icon != "fas fa-circle")
                     img(src=`${obj.icon}`, alt="", width="30", height="30")
                 else
                     i(class=`${obj.icon} fa-sm`)
-                
+
                 li.ml-2.my-3= obj.name 
 
-mixin modal(objModal)
-    <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+mixin modal1(obj)
+    <div class="modal fade" id="basicExampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    h5(class="modal-title")= obj.tittle
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    +contentModal(objModal.features)
+                    +contentModal(obj.features, obj.img)
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    
                 </div>
             </div>
         </div>
     </div>
 
-mixin card(title, image, description)
-    .col-12.col-sm-12.col-md-6.mb-4
+mixin modal2(obj)
+    <div class="modal fade" id="basicExampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    h5(class="modal-title")= obj.tittle
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    +contentModal(obj.features, obj.img)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+mixin modal3(obj)
+    <div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    h5(class="modal-title")= obj.tittle
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    +contentModal(obj.features, obj.img)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+mixin card1(title, image, description)
+    .col-12.col-sm-12.col-md-4.mb-4.d-flex.contenedor-card#totem
         .card.align-items-center
             .card-header
                 h2.card-tittle= title
-            img(src=`../img/assets/${image}`, class="card-img-top img-fluid")
+            img(src=`img/assets/${image}`, class="card-img-top img-fluid")
             .card-body
                 p.card-text= description
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Ver Mas</button>
+                .contenedor-boton
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal1">Ver Mas</button>
 
-mixin contentModal(content)
+mixin card2(title, image, description)
+    .col-12.col-sm-12.col-md-4.mb-4.d-flex.contenedor-card
+        .card.align-items-center
+            .card-header
+                h2.card-tittle= title
+            img(src=`img/assets/${image}`, class="card-img-top img-fluid")
+            .card-body
+                p.card-text= description
+                .contenedor-boton
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal2">Ver Mas</button>
+
+mixin card3(title, image, description)
+    .col-12.col-sm-12.col-md-4.mb-4.d-flex.contenedor-card
+        .card.align-items-center
+            .card-header
+                h2.card-tittle= title
+            img(src=`img/assets/${image}`, class="card-img-top img-fluid")
+            .card-body
+                p.card-text= description
+                .contenedor-boton
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal3">Ver Mas</button>
+
+mixin contentModal(content, image)
     each c in content
         p= c.name
-
 
 mixin contactForm()
     <form class="text-center white p-3 rounded-lg open-sans z-depth-2" action="#!">

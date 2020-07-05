@@ -1,63 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@300;400;700&display=swap");
-.oswald, .oswald-700, .oswald-600, .oswald-300 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-}
-.oswald-300 {
-  font-weight: 300;
-}
-.oswald-600 {
-  font-weight: 600;
-}
-.oswald-700 {
-  font-weight: 700;
-}
+.oswald, .oswald-300, .oswald-600, .oswald-700 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400; }
+  .oswald-300 {
+    font-weight: 300; }
+  .oswald-600 {
+    font-weight: 600; }
+  .oswald-700 {
+    font-weight: 700; }
 
-.open-sans, .open-sans-700, .open-sans-300 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
-.open-sans-300 {
-  font-weight: 300;
-}
-.open-sans-700 {
-  font-weight: 700;
-}
+.open-sans, .open-sans-300, .open-sans-700 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+  .open-sans-300 {
+    font-weight: 300; }
+  .open-sans-700 {
+    font-weight: 700; }
 
-.home, .home-bg {
-  height: 100%;
-  width: 100%;
-}
-.home-bg {
-  background-image: url("../img/banner-bg.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.home-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: minmax(200px, auto) 0px minmax(70px, auto);
-  grid-template-areas: "top" "center" "bottom";
-  height: 100%;
-  transition: all 0.5s ease-in-out;
-}
-.home-grid .item-grid-img {
-  align-self: end;
-  justify-self: center;
-  grid-area: top;
-}
-.home-grid .item-grid-content {
-  grid-area: center;
-  align-self: center;
+#primer-lista {
+  justify-content: center !important; }
+  #primer-lista ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center !important; }
+    #primer-lista ul li {
+      margin: 0 30px;
+      font-weight: bold; }
+
+.card-header {
+  background-color: #fff; }
+
+.contenedor-card {
+  display: flex; }
+
+.card {
   justify-content: center;
-}
-.home-grid .item-grid-menu {
-  display: flex;
-  align-self: start;
-  justify-content: center;
-  grid-area: bottom;
-  height: 100%;
-}
+  margin: auto;
+  max-width: 400px;
+  max-height: 600px; }
+  .card img {
+    max-width: 250px;
+    max-height: 290px; }
+  .card .contenedor-boton {
+    display: flex; }
+    .card .contenedor-boton button {
+      margin: auto;
+      border-radius: 6px; }
 
 #nosotros {
   background-image: url("../img/assets/home.jpg");
@@ -139,1220 +127,1017 @@
 }
 
 .d-grid {
-  display: grid;
-}
+  display: grid; }
 
 #content-page {
   background-color: rgba(23, 230, 185, 0.3);
 }
 
 .spacing-0 {
-  letter-spacing: 0px;
-}
+  letter-spacing: 0px; }
 
 .font-0 {
-  font-size: 0rem;
-}
+  font-size: 0rem; }
 
 .z-index-0 {
   z-index: 0;
 }
 
 .spacing-1 {
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 .font-1 {
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .z-index-1 {
   z-index: 1;
 }
 
 .spacing-2 {
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
 
 .font-2 {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .z-index-2 {
   z-index: 2;
 }
 
 .spacing-3 {
-  letter-spacing: 3px;
-}
+  letter-spacing: 3px; }
 
 .font-3 {
-  font-size: 3rem;
-}
+  font-size: 3rem; }
 
 .z-index-3 {
   z-index: 3;
 }
 
 .spacing-4 {
-  letter-spacing: 4px;
-}
+  letter-spacing: 4px; }
 
 .font-4 {
-  font-size: 4rem;
-}
+  font-size: 4rem; }
 
 .z-index-4 {
   z-index: 4;
 }
 
 .spacing-5 {
-  letter-spacing: 5px;
-}
+  letter-spacing: 5px; }
 
 .font-5 {
-  font-size: 5rem;
-}
+  font-size: 5rem; }
 
 .z-index-5 {
   z-index: 5;
 }
 
 .spacing-6 {
-  letter-spacing: 6px;
-}
+  letter-spacing: 6px; }
 
 .font-6 {
-  font-size: 6rem;
-}
+  font-size: 6rem; }
 
 .z-index-6 {
   z-index: 6;
 }
 
 .spacing-7 {
-  letter-spacing: 7px;
-}
+  letter-spacing: 7px; }
 
 .font-7 {
-  font-size: 7rem;
-}
+  font-size: 7rem; }
 
 .z-index-7 {
   z-index: 7;
 }
 
 .spacing-8 {
-  letter-spacing: 8px;
-}
+  letter-spacing: 8px; }
 
 .font-8 {
-  font-size: 8rem;
-}
+  font-size: 8rem; }
 
 .z-index-8 {
   z-index: 8;
 }
 
 .spacing-9 {
-  letter-spacing: 9px;
-}
+  letter-spacing: 9px; }
 
 .font-9 {
-  font-size: 9rem;
-}
+  font-size: 9rem; }
 
 .z-index-9 {
   z-index: 9;
 }
 
 .spacing-10 {
-  letter-spacing: 10px;
-}
+  letter-spacing: 10px; }
 
 .font-10 {
-  font-size: 10rem;
-}
+  font-size: 10rem; }
 
 .z-index-10 {
   z-index: 10;
 }
 
 .spacing-11 {
-  letter-spacing: 11px;
-}
+  letter-spacing: 11px; }
 
 .font-11 {
-  font-size: 11rem;
-}
+  font-size: 11rem; }
 
 .z-index-11 {
   z-index: 11;
 }
 
 .spacing-12 {
-  letter-spacing: 12px;
-}
+  letter-spacing: 12px; }
 
 .font-12 {
-  font-size: 12rem;
-}
+  font-size: 12rem; }
 
 .z-index-12 {
   z-index: 12;
 }
 
 .spacing-13 {
-  letter-spacing: 13px;
-}
+  letter-spacing: 13px; }
 
 .font-13 {
-  font-size: 13rem;
-}
+  font-size: 13rem; }
 
 .z-index-13 {
   z-index: 13;
 }
 
 .spacing-14 {
-  letter-spacing: 14px;
-}
+  letter-spacing: 14px; }
 
 .font-14 {
-  font-size: 14rem;
-}
+  font-size: 14rem; }
 
 .z-index-14 {
   z-index: 14;
 }
 
 .spacing-15 {
-  letter-spacing: 15px;
-}
+  letter-spacing: 15px; }
 
 .font-15 {
-  font-size: 15rem;
-}
+  font-size: 15rem; }
 
 .z-index-15 {
   z-index: 15;
 }
 
 .spacing-16 {
-  letter-spacing: 16px;
-}
+  letter-spacing: 16px; }
 
 .font-16 {
-  font-size: 16rem;
-}
+  font-size: 16rem; }
 
 .z-index-16 {
   z-index: 16;
 }
 
 .spacing-17 {
-  letter-spacing: 17px;
-}
+  letter-spacing: 17px; }
 
 .font-17 {
-  font-size: 17rem;
-}
+  font-size: 17rem; }
 
 .z-index-17 {
   z-index: 17;
 }
 
 .spacing-18 {
-  letter-spacing: 18px;
-}
+  letter-spacing: 18px; }
 
 .font-18 {
-  font-size: 18rem;
-}
+  font-size: 18rem; }
 
 .z-index-18 {
   z-index: 18;
 }
 
 .spacing-19 {
-  letter-spacing: 19px;
-}
+  letter-spacing: 19px; }
 
 .font-19 {
-  font-size: 19rem;
-}
+  font-size: 19rem; }
 
 .z-index-19 {
   z-index: 19;
 }
 
 .spacing-20 {
-  letter-spacing: 20px;
-}
+  letter-spacing: 20px; }
 
 .font-20 {
-  font-size: 20rem;
-}
+  font-size: 20rem; }
 
 .z-index-20 {
   z-index: 20;
 }
 
 .spacing-21 {
-  letter-spacing: 21px;
-}
+  letter-spacing: 21px; }
 
 .font-21 {
-  font-size: 21rem;
-}
+  font-size: 21rem; }
 
 .z-index-21 {
   z-index: 21;
 }
 
 .spacing-22 {
-  letter-spacing: 22px;
-}
+  letter-spacing: 22px; }
 
 .font-22 {
-  font-size: 22rem;
-}
+  font-size: 22rem; }
 
 .z-index-22 {
   z-index: 22;
 }
 
 .spacing-23 {
-  letter-spacing: 23px;
-}
+  letter-spacing: 23px; }
 
 .font-23 {
-  font-size: 23rem;
-}
+  font-size: 23rem; }
 
 .z-index-23 {
   z-index: 23;
 }
 
 .spacing-24 {
-  letter-spacing: 24px;
-}
+  letter-spacing: 24px; }
 
 .font-24 {
-  font-size: 24rem;
-}
+  font-size: 24rem; }
 
 .z-index-24 {
   z-index: 24;
 }
 
 .spacing-25 {
-  letter-spacing: 25px;
-}
+  letter-spacing: 25px; }
 
 .font-25 {
-  font-size: 25rem;
-}
+  font-size: 25rem; }
 
 .z-index-25 {
   z-index: 25;
 }
 
 .spacing-26 {
-  letter-spacing: 26px;
-}
+  letter-spacing: 26px; }
 
 .font-26 {
-  font-size: 26rem;
-}
+  font-size: 26rem; }
 
 .z-index-26 {
   z-index: 26;
 }
 
 .spacing-27 {
-  letter-spacing: 27px;
-}
+  letter-spacing: 27px; }
 
 .font-27 {
-  font-size: 27rem;
-}
+  font-size: 27rem; }
 
 .z-index-27 {
   z-index: 27;
 }
 
 .spacing-28 {
-  letter-spacing: 28px;
-}
+  letter-spacing: 28px; }
 
 .font-28 {
-  font-size: 28rem;
-}
+  font-size: 28rem; }
 
 .z-index-28 {
   z-index: 28;
 }
 
 .spacing-29 {
-  letter-spacing: 29px;
-}
+  letter-spacing: 29px; }
 
 .font-29 {
-  font-size: 29rem;
-}
+  font-size: 29rem; }
 
 .z-index-29 {
   z-index: 29;
 }
 
 .spacing-30 {
-  letter-spacing: 30px;
-}
+  letter-spacing: 30px; }
 
 .font-30 {
-  font-size: 30rem;
-}
+  font-size: 30rem; }
 
 .z-index-30 {
   z-index: 30;
 }
 
 .spacing-31 {
-  letter-spacing: 31px;
-}
+  letter-spacing: 31px; }
 
 .font-31 {
-  font-size: 31rem;
-}
+  font-size: 31rem; }
 
 .z-index-31 {
   z-index: 31;
 }
 
 .spacing-32 {
-  letter-spacing: 32px;
-}
+  letter-spacing: 32px; }
 
 .font-32 {
-  font-size: 32rem;
-}
+  font-size: 32rem; }
 
 .z-index-32 {
   z-index: 32;
 }
 
 .spacing-33 {
-  letter-spacing: 33px;
-}
+  letter-spacing: 33px; }
 
 .font-33 {
-  font-size: 33rem;
-}
+  font-size: 33rem; }
 
 .z-index-33 {
   z-index: 33;
 }
 
 .spacing-34 {
-  letter-spacing: 34px;
-}
+  letter-spacing: 34px; }
 
 .font-34 {
-  font-size: 34rem;
-}
+  font-size: 34rem; }
 
 .z-index-34 {
   z-index: 34;
 }
 
 .spacing-35 {
-  letter-spacing: 35px;
-}
+  letter-spacing: 35px; }
 
 .font-35 {
-  font-size: 35rem;
-}
+  font-size: 35rem; }
 
 .z-index-35 {
   z-index: 35;
 }
 
 .spacing-36 {
-  letter-spacing: 36px;
-}
+  letter-spacing: 36px; }
 
 .font-36 {
-  font-size: 36rem;
-}
+  font-size: 36rem; }
 
 .z-index-36 {
   z-index: 36;
 }
 
 .spacing-37 {
-  letter-spacing: 37px;
-}
+  letter-spacing: 37px; }
 
 .font-37 {
-  font-size: 37rem;
-}
+  font-size: 37rem; }
 
 .z-index-37 {
   z-index: 37;
 }
 
 .spacing-38 {
-  letter-spacing: 38px;
-}
+  letter-spacing: 38px; }
 
 .font-38 {
-  font-size: 38rem;
-}
+  font-size: 38rem; }
 
 .z-index-38 {
   z-index: 38;
 }
 
 .spacing-39 {
-  letter-spacing: 39px;
-}
+  letter-spacing: 39px; }
 
 .font-39 {
-  font-size: 39rem;
-}
+  font-size: 39rem; }
 
 .z-index-39 {
   z-index: 39;
 }
 
 .spacing-40 {
-  letter-spacing: 40px;
-}
+  letter-spacing: 40px; }
 
 .font-40 {
-  font-size: 40rem;
-}
+  font-size: 40rem; }
 
 .z-index-40 {
   z-index: 40;
 }
 
 .spacing-41 {
-  letter-spacing: 41px;
-}
+  letter-spacing: 41px; }
 
 .font-41 {
-  font-size: 41rem;
-}
+  font-size: 41rem; }
 
 .z-index-41 {
   z-index: 41;
 }
 
 .spacing-42 {
-  letter-spacing: 42px;
-}
+  letter-spacing: 42px; }
 
 .font-42 {
-  font-size: 42rem;
-}
+  font-size: 42rem; }
 
 .z-index-42 {
   z-index: 42;
 }
 
 .spacing-43 {
-  letter-spacing: 43px;
-}
+  letter-spacing: 43px; }
 
 .font-43 {
-  font-size: 43rem;
-}
+  font-size: 43rem; }
 
 .z-index-43 {
   z-index: 43;
 }
 
 .spacing-44 {
-  letter-spacing: 44px;
-}
+  letter-spacing: 44px; }
 
 .font-44 {
-  font-size: 44rem;
-}
+  font-size: 44rem; }
 
 .z-index-44 {
   z-index: 44;
 }
 
 .spacing-45 {
-  letter-spacing: 45px;
-}
+  letter-spacing: 45px; }
 
 .font-45 {
-  font-size: 45rem;
-}
+  font-size: 45rem; }
 
 .z-index-45 {
   z-index: 45;
 }
 
 .spacing-46 {
-  letter-spacing: 46px;
-}
+  letter-spacing: 46px; }
 
 .font-46 {
-  font-size: 46rem;
-}
+  font-size: 46rem; }
 
 .z-index-46 {
   z-index: 46;
 }
 
 .spacing-47 {
-  letter-spacing: 47px;
-}
+  letter-spacing: 47px; }
 
 .font-47 {
-  font-size: 47rem;
-}
+  font-size: 47rem; }
 
 .z-index-47 {
   z-index: 47;
 }
 
 .spacing-48 {
-  letter-spacing: 48px;
-}
+  letter-spacing: 48px; }
 
 .font-48 {
-  font-size: 48rem;
-}
+  font-size: 48rem; }
 
 .z-index-48 {
   z-index: 48;
 }
 
 .spacing-49 {
-  letter-spacing: 49px;
-}
+  letter-spacing: 49px; }
 
 .font-49 {
-  font-size: 49rem;
-}
+  font-size: 49rem; }
 
 .z-index-49 {
   z-index: 49;
 }
 
 .spacing-50 {
-  letter-spacing: 50px;
-}
+  letter-spacing: 50px; }
 
 .font-50 {
-  font-size: 50rem;
-}
+  font-size: 50rem; }
 
 .z-index-50 {
   z-index: 50;
 }
 
 .spacing-51 {
-  letter-spacing: 51px;
-}
+  letter-spacing: 51px; }
 
 .font-51 {
-  font-size: 51rem;
-}
+  font-size: 51rem; }
 
 .z-index-51 {
   z-index: 51;
 }
 
 .spacing-52 {
-  letter-spacing: 52px;
-}
+  letter-spacing: 52px; }
 
 .font-52 {
-  font-size: 52rem;
-}
+  font-size: 52rem; }
 
 .z-index-52 {
   z-index: 52;
 }
 
 .spacing-53 {
-  letter-spacing: 53px;
-}
+  letter-spacing: 53px; }
 
 .font-53 {
-  font-size: 53rem;
-}
+  font-size: 53rem; }
 
 .z-index-53 {
   z-index: 53;
 }
 
 .spacing-54 {
-  letter-spacing: 54px;
-}
+  letter-spacing: 54px; }
 
 .font-54 {
-  font-size: 54rem;
-}
+  font-size: 54rem; }
 
 .z-index-54 {
   z-index: 54;
 }
 
 .spacing-55 {
-  letter-spacing: 55px;
-}
+  letter-spacing: 55px; }
 
 .font-55 {
-  font-size: 55rem;
-}
+  font-size: 55rem; }
 
 .z-index-55 {
   z-index: 55;
 }
 
 .spacing-56 {
-  letter-spacing: 56px;
-}
+  letter-spacing: 56px; }
 
 .font-56 {
-  font-size: 56rem;
-}
+  font-size: 56rem; }
 
 .z-index-56 {
   z-index: 56;
 }
 
 .spacing-57 {
-  letter-spacing: 57px;
-}
+  letter-spacing: 57px; }
 
 .font-57 {
-  font-size: 57rem;
-}
+  font-size: 57rem; }
 
 .z-index-57 {
   z-index: 57;
 }
 
 .spacing-58 {
-  letter-spacing: 58px;
-}
+  letter-spacing: 58px; }
 
 .font-58 {
-  font-size: 58rem;
-}
+  font-size: 58rem; }
 
 .z-index-58 {
   z-index: 58;
 }
 
 .spacing-59 {
-  letter-spacing: 59px;
-}
+  letter-spacing: 59px; }
 
 .font-59 {
-  font-size: 59rem;
-}
+  font-size: 59rem; }
 
 .z-index-59 {
   z-index: 59;
 }
 
 .spacing-60 {
-  letter-spacing: 60px;
-}
+  letter-spacing: 60px; }
 
 .font-60 {
-  font-size: 60rem;
-}
+  font-size: 60rem; }
 
 .z-index-60 {
   z-index: 60;
 }
 
 .spacing-61 {
-  letter-spacing: 61px;
-}
+  letter-spacing: 61px; }
 
 .font-61 {
-  font-size: 61rem;
-}
+  font-size: 61rem; }
 
 .z-index-61 {
   z-index: 61;
 }
 
 .spacing-62 {
-  letter-spacing: 62px;
-}
+  letter-spacing: 62px; }
 
 .font-62 {
-  font-size: 62rem;
-}
+  font-size: 62rem; }
 
 .z-index-62 {
   z-index: 62;
 }
 
 .spacing-63 {
-  letter-spacing: 63px;
-}
+  letter-spacing: 63px; }
 
 .font-63 {
-  font-size: 63rem;
-}
+  font-size: 63rem; }
 
 .z-index-63 {
   z-index: 63;
 }
 
 .spacing-64 {
-  letter-spacing: 64px;
-}
+  letter-spacing: 64px; }
 
 .font-64 {
-  font-size: 64rem;
-}
+  font-size: 64rem; }
 
 .z-index-64 {
   z-index: 64;
 }
 
 .spacing-65 {
-  letter-spacing: 65px;
-}
+  letter-spacing: 65px; }
 
 .font-65 {
-  font-size: 65rem;
-}
+  font-size: 65rem; }
 
 .z-index-65 {
   z-index: 65;
 }
 
 .spacing-66 {
-  letter-spacing: 66px;
-}
+  letter-spacing: 66px; }
 
 .font-66 {
-  font-size: 66rem;
-}
+  font-size: 66rem; }
 
 .z-index-66 {
   z-index: 66;
 }
 
 .spacing-67 {
-  letter-spacing: 67px;
-}
+  letter-spacing: 67px; }
 
 .font-67 {
-  font-size: 67rem;
-}
+  font-size: 67rem; }
 
 .z-index-67 {
   z-index: 67;
 }
 
 .spacing-68 {
-  letter-spacing: 68px;
-}
+  letter-spacing: 68px; }
 
 .font-68 {
-  font-size: 68rem;
-}
+  font-size: 68rem; }
 
 .z-index-68 {
   z-index: 68;
 }
 
 .spacing-69 {
-  letter-spacing: 69px;
-}
+  letter-spacing: 69px; }
 
 .font-69 {
-  font-size: 69rem;
-}
+  font-size: 69rem; }
 
 .z-index-69 {
   z-index: 69;
 }
 
 .spacing-70 {
-  letter-spacing: 70px;
-}
+  letter-spacing: 70px; }
 
 .font-70 {
-  font-size: 70rem;
-}
+  font-size: 70rem; }
 
 .z-index-70 {
   z-index: 70;
 }
 
 .spacing-71 {
-  letter-spacing: 71px;
-}
+  letter-spacing: 71px; }
 
 .font-71 {
-  font-size: 71rem;
-}
+  font-size: 71rem; }
 
 .z-index-71 {
   z-index: 71;
 }
 
 .spacing-72 {
-  letter-spacing: 72px;
-}
+  letter-spacing: 72px; }
 
 .font-72 {
-  font-size: 72rem;
-}
+  font-size: 72rem; }
 
 .z-index-72 {
   z-index: 72;
 }
 
 .spacing-73 {
-  letter-spacing: 73px;
-}
+  letter-spacing: 73px; }
 
 .font-73 {
-  font-size: 73rem;
-}
+  font-size: 73rem; }
 
 .z-index-73 {
   z-index: 73;
 }
 
 .spacing-74 {
-  letter-spacing: 74px;
-}
+  letter-spacing: 74px; }
 
 .font-74 {
-  font-size: 74rem;
-}
+  font-size: 74rem; }
 
 .z-index-74 {
   z-index: 74;
 }
 
 .spacing-75 {
-  letter-spacing: 75px;
-}
+  letter-spacing: 75px; }
 
 .font-75 {
-  font-size: 75rem;
-}
+  font-size: 75rem; }
 
 .z-index-75 {
   z-index: 75;
 }
 
 .spacing-76 {
-  letter-spacing: 76px;
-}
+  letter-spacing: 76px; }
 
 .font-76 {
-  font-size: 76rem;
-}
+  font-size: 76rem; }
 
 .z-index-76 {
   z-index: 76;
 }
 
 .spacing-77 {
-  letter-spacing: 77px;
-}
+  letter-spacing: 77px; }
 
 .font-77 {
-  font-size: 77rem;
-}
+  font-size: 77rem; }
 
 .z-index-77 {
   z-index: 77;
 }
 
 .spacing-78 {
-  letter-spacing: 78px;
-}
+  letter-spacing: 78px; }
 
 .font-78 {
-  font-size: 78rem;
-}
+  font-size: 78rem; }
 
 .z-index-78 {
   z-index: 78;
 }
 
 .spacing-79 {
-  letter-spacing: 79px;
-}
+  letter-spacing: 79px; }
 
 .font-79 {
-  font-size: 79rem;
-}
+  font-size: 79rem; }
 
 .z-index-79 {
   z-index: 79;
 }
 
 .spacing-80 {
-  letter-spacing: 80px;
-}
+  letter-spacing: 80px; }
 
 .font-80 {
-  font-size: 80rem;
-}
+  font-size: 80rem; }
 
 .z-index-80 {
   z-index: 80;
 }
 
 .spacing-81 {
-  letter-spacing: 81px;
-}
+  letter-spacing: 81px; }
 
 .font-81 {
-  font-size: 81rem;
-}
+  font-size: 81rem; }
 
 .z-index-81 {
   z-index: 81;
 }
 
 .spacing-82 {
-  letter-spacing: 82px;
-}
+  letter-spacing: 82px; }
 
 .font-82 {
-  font-size: 82rem;
-}
+  font-size: 82rem; }
 
 .z-index-82 {
   z-index: 82;
 }
 
 .spacing-83 {
-  letter-spacing: 83px;
-}
+  letter-spacing: 83px; }
 
 .font-83 {
-  font-size: 83rem;
-}
+  font-size: 83rem; }
 
 .z-index-83 {
   z-index: 83;
 }
 
 .spacing-84 {
-  letter-spacing: 84px;
-}
+  letter-spacing: 84px; }
 
 .font-84 {
-  font-size: 84rem;
-}
+  font-size: 84rem; }
 
 .z-index-84 {
   z-index: 84;
 }
 
 .spacing-85 {
-  letter-spacing: 85px;
-}
+  letter-spacing: 85px; }
 
 .font-85 {
-  font-size: 85rem;
-}
+  font-size: 85rem; }
 
 .z-index-85 {
   z-index: 85;
 }
 
 .spacing-86 {
-  letter-spacing: 86px;
-}
+  letter-spacing: 86px; }
 
 .font-86 {
-  font-size: 86rem;
-}
+  font-size: 86rem; }
 
 .z-index-86 {
   z-index: 86;
 }
 
 .spacing-87 {
-  letter-spacing: 87px;
-}
+  letter-spacing: 87px; }
 
 .font-87 {
-  font-size: 87rem;
-}
+  font-size: 87rem; }
 
 .z-index-87 {
   z-index: 87;
 }
 
 .spacing-88 {
-  letter-spacing: 88px;
-}
+  letter-spacing: 88px; }
 
 .font-88 {
-  font-size: 88rem;
-}
+  font-size: 88rem; }
 
 .z-index-88 {
   z-index: 88;
 }
 
 .spacing-89 {
-  letter-spacing: 89px;
-}
+  letter-spacing: 89px; }
 
 .font-89 {
-  font-size: 89rem;
-}
+  font-size: 89rem; }
 
 .z-index-89 {
   z-index: 89;
 }
 
 .spacing-90 {
-  letter-spacing: 90px;
-}
+  letter-spacing: 90px; }
 
 .font-90 {
-  font-size: 90rem;
-}
+  font-size: 90rem; }
 
 .z-index-90 {
   z-index: 90;
 }
 
 .spacing-91 {
-  letter-spacing: 91px;
-}
+  letter-spacing: 91px; }
 
 .font-91 {
-  font-size: 91rem;
-}
+  font-size: 91rem; }
 
 .z-index-91 {
   z-index: 91;
 }
 
 .spacing-92 {
-  letter-spacing: 92px;
-}
+  letter-spacing: 92px; }
 
 .font-92 {
-  font-size: 92rem;
-}
+  font-size: 92rem; }
 
 .z-index-92 {
   z-index: 92;
 }
 
 .spacing-93 {
-  letter-spacing: 93px;
-}
+  letter-spacing: 93px; }
 
 .font-93 {
-  font-size: 93rem;
-}
+  font-size: 93rem; }
 
 .z-index-93 {
   z-index: 93;
 }
 
 .spacing-94 {
-  letter-spacing: 94px;
-}
+  letter-spacing: 94px; }
 
 .font-94 {
-  font-size: 94rem;
-}
+  font-size: 94rem; }
 
 .z-index-94 {
   z-index: 94;
 }
 
 .spacing-95 {
-  letter-spacing: 95px;
-}
+  letter-spacing: 95px; }
 
 .font-95 {
-  font-size: 95rem;
-}
+  font-size: 95rem; }
 
 .z-index-95 {
   z-index: 95;
 }
 
 .spacing-96 {
-  letter-spacing: 96px;
-}
+  letter-spacing: 96px; }
 
 .font-96 {
-  font-size: 96rem;
-}
+  font-size: 96rem; }
 
 .z-index-96 {
   z-index: 96;
 }
 
 .spacing-97 {
-  letter-spacing: 97px;
-}
+  letter-spacing: 97px; }
 
 .font-97 {
-  font-size: 97rem;
-}
+  font-size: 97rem; }
 
 .z-index-97 {
   z-index: 97;
 }
 
 .spacing-98 {
-  letter-spacing: 98px;
-}
+  letter-spacing: 98px; }
 
 .font-98 {
-  font-size: 98rem;
-}
+  font-size: 98rem; }
 
 .z-index-98 {
   z-index: 98;
 }
 
 .spacing-99 {
-  letter-spacing: 99px;
-}
+  letter-spacing: 99px; }
 
 .font-99 {
-  font-size: 99rem;
-}
+  font-size: 99rem; }
 
 .z-index-99 {
   z-index: 99;
 }
 
 .spacing-100 {
-  letter-spacing: 100px;
-}
+  letter-spacing: 100px; }
 
 .font-100 {
-  font-size: 100rem;
-}
+  font-size: 100rem; }
 
 .z-index-100 {
   z-index: 100;
