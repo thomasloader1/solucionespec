@@ -1,10 +1,18 @@
+@import "mixins";
 @import 'fonts';
 @import 'home.scss';
 @import 'nosotros.scss';
+@import 'contacto.scss';
 
 .d-grid {
     display: grid;
 }
+
+#content-page{
+    background-color: rgba($color: #17e6b9, $alpha: 0.3);
+}
+
+
 
 @for $i from 0 through 100 {
     .spacing-#{$i} {
@@ -12,5 +20,8 @@
     }
     .font-#{$i} {
         font-size: #{$i}rem;
+    }
+    .z-index-#{$i}{
+        z-index: #{$i};
     }
 }
