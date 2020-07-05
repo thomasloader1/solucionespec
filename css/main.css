@@ -44,7 +44,8 @@
   .card .contenedor-boton {
     display: flex; }
     .card .contenedor-boton button {
-      margin: auto; }
+      margin: auto;
+      border-radius: 6px; }
 
 .img-nosotros {
   background-image: url("../img/assets/home.jpg");
@@ -62,6 +63,23 @@
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.7); }
+
+#navbar {
+  background-color: #61c3df; }
+  #navbar .container a {
+    color: #fff;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: left;
+    font-size: 1em; }
+  #navbar .container #basicExampleNav #m-desplegable #basicExampleNav2 a {
+    font-size: 0.8em;
+    text-align: left;
+    color: #444; }
+  #navbar .container #basicExampleNav #m-desplegable [data-toggle="collapse"] .fa:before {
+    content: "\f139"; }
+  #navbar .container #basicExampleNav #m-desplegable [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f13a"; }
 
 .d-grid {
   display: grid; }
