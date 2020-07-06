@@ -1,15 +1,42 @@
 @import "mixins";
+@import "hamburgerMenu";
 @import 'fonts';
-@import 'home.scss';
 @import 'nosotros.scss';
 @import 'contacto.scss';
+@import "modulos";
 
 .d-grid {
   display: grid;
 }
 
-#content-page{
-    background-color: rgba($color: #17e6b9, $alpha: 0.3);
+.rounded-xl{
+    border-radius: 0.7rem;
+}
+#content-page{}
+.text-shadow{
+    text-shadow: 2px 2px 3px rgba($color: #000000, $alpha: 0.2);
+}
+
+.card{  
+    @for $i from 0 through 2{    
+        &-back-img-#{$i}{
+            background: {
+                image: url("../img/assets/producto-card-#{$i}.png");
+                size: cover;
+                repeat: no-repeat;
+                position: center;   
+            }
+            position: relative;
+            z-index: 1;
+            @include maskAfter(true);
+        }
+    }
+    &-inner{
+        background-color: white;
+        border-radius: 1rem 1rem 0.7rem 0.7rem;
+        padding: 1rem;
+        margin-top: 10rem;
+    }
 }
 
 @for $i from 0 through 100 {

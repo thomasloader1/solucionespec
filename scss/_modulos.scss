@@ -1,36 +1,18 @@
-#primer-lista {
-  justify-content: center !important;
-  ul {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center !important;
-    li {
-      margin: 0 30px;
-      font-weight: bold;
+#porticopec{
+    .modal-content{
+        background: {
+            image: url("../img/assets/card-modals/modal-porticopec.jpeg");
+            repeat: no-repeat;
+            size: cover;
+            position: bottom right;
+        }
+        position: relative;
+        z-index: 1;
+        border-radius: 0.7rem;
+        @include maskAfterGradient();
     }
-  }
-}
 
-.card-header {
-  background-color: #fff;
-}
-.contenedor-card {
-  display: flex;
-}
-.card {
-  justify-content: center;
-  margin: auto;
-  max-width: 400px;
-  max-height: 600px;
-  img {
-    max-width: 250px;
-    max-height: 290px;
-  }
-  .contenedor-boton {
-    display: flex;
-    button {
-      margin: auto;
-      border-radius: 6px;
+    .modal-body{
+        border-radius: 0.7rem;
     }
-  }
 }

@@ -6,7 +6,7 @@
         display: grid;
         grid-template: {
             columns: 1fr;
-            rows: 70% 30%;
+            rows: 80% 20%;
             areas: "text" "button";
         }
         align-items: center;

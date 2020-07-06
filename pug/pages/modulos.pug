@@ -1,19 +1,17 @@
 .row
     .col-12.text-center
-        h2 Modulos Sanitizantes
-.row
-    .col-12
-        p excelente solución para incrementar las medidas de higiene en el ingreso a aquellos espacios de alta circulación tales como:   
+        h2.open-sans-700.text-uppercase Modulos Sanitizantes
+        p.open-sans-300 Excelente solución para incrementar las medidas de higiene en el ingreso a aquellos espacios de alta circulación tales como:   
 .row.mt-0
-    div(class="col-12 d-flex" id="primer-lista")
-        ul.list-unstyled.d-flex    
+    .col-12
+        ul.list-unstyled.d-flex.flex-wrap.justify-content-center
             +getListado(listados.primero)
 .row
-    .col-12.caracteristicas
+    .col-12
         ul.list-unstyled  
             +getListado(listados.segundo)
 .row
-    .col-12.descripcion-modulos
+    .col-12
         p Nuestros diseños se incorporan de manera fácil a cualquier lugar en donde haya ingreso de personas. Mediante el uso de micro aspersores, se impulsa una solución sanitizante inocua, incolora e inodora diluida en agua que cubre el 100% de la superficie corporal. Quedando en sólo 5 segundos cubierto con una barrera anti bacterial garantizada
 .row
     .col-12
@@ -22,13 +20,9 @@
         ul.list-unstyled    
             +getListado(listados.tercero)
         
-.row
-    
-    +card1("Totem", "totemUso.png", desciption) 
-    +modal1(contenidoModal.totem)
-    
-    +card2("Portico", "porticoUso.png", desciption) 
-    +modal2(contenidoModal.portico)
-    
-    +card3("Cabina", "cabinaUso.png", desciption)
-    +modal3(contenidoModal.cabina)
+
++card(contenidoModal)
+
++modal(contenidoModal)
+//- +card(contenidoModal.portico)
+//- +card(contenidoModal.cabina)

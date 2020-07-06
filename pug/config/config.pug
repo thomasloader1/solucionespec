@@ -1,40 +1,33 @@
 - let titlePage = "CAMBIAR EL TITULO DE LA PAGINA"
-- let desciption = 'Construido en aluminio compuesto de máxima calidad, inalterable en el tiempo. Este material cuenta con mejores propiedades que el acero inoxidable calidad 430.';
-
 - 
     let listados = {
-        primero:[
-            {
+        primero:[{
             name: "Comercios",
             icon: `fas fa-circle`,
-            },
-            {
+            },{
             name: "Industrias",
             icon: `fas fa-circle`
-            },
-            {
+            },{
             name: "Edificios",
             icon: `fas fa-circle`
-            },
-            {
+            },{
             name: "Hogares",
             icon: `fas fa-circle`
-            },
-            {
+            },{
             name: "Colegios",
-            icon: `fas fa-circle`
-            }
-            ],
-        segundo:[
-            {name: "Fabricados íntegramente en Aluminio Compuesto de máxima calidad inalterable",
-            icon: `./img/assets/icoList.png`},
-            {name: "Elimina el 99.9% de virus y bacterias.",
-            icon: `./img/assets/icoList.png`},
-            {name: "Aptos para uso de desinfectantes aprobados y certificados por ANMAT.",
-            icon: `./img/assets/icoList.png`},
-            {name: "Nuestros modelos no requieren instalación de agua, son compactos y fácilmente trasladables.",
-            icon: `./img/assets/icoList.png`},
-            ],
+            icon: `fas fa-circle`}],
+        segundo:[{
+            name: "Fabricados íntegramente en Aluminio Compuesto de máxima calidad inalterable",
+            icon: `./img/assets/icoList.png`
+            },{
+            name: "Elimina el 99.9% de virus y bacterias.",
+            icon: `./img/assets/icoList.png`
+            },{
+            name: "Aptos para uso de desinfectantes aprobados y certificados por ANMAT.",
+            icon: `./img/assets/icoList.png`
+            },{
+            name: "Nuestros modelos no requieren instalación de agua, son compactos y fácilmente trasladables.",
+            icon: `./img/assets/icoList.png`},],
         tercero:[
             {name: "Ácido Hipocloroso al 0.05%",
             icon: `fas fa-circle`},
@@ -49,75 +42,88 @@
 
 
 -    
-    let contenidoModal = {   
-        portico: {
-            tittle: "PÓRTICO PEC 316",
-            text: "Módulo Sanitizante - Uso Interior y Exterior",
-            features: [
-                {name: "6 micro aspersores nebulizadores.",
-                icon: `iconList.png`},
-                {name: "Tanque integrado de 10 lt de capacidad. (equivalente a 100 accionamientos)",
-                icon: `iconList.png`},
-                {name: "Alfombra antideslizante y sanitizante",
-                icon: `iconList.png`},
-                {name: "Sensor de movimiento y activación automática",
-                icon: `iconList.png`},
-                {name: "Bomba periférica de alta calidad.",
-                icon: `iconList.png`},
-                {name: "Instalación eléctrica con llave termo magnética.",
-                icon: `iconList.png`},
-                {name: "Protocolo de acceso de 3 pasos.",
-                icon: `fas fa-circle`},
-                ], 
-                img: `ejemploPortico.jpg`,
-    },
-
-        totem: {
-            tittle: "TOTEM PEC 314",
-            text: "Módulo Sanitizante - Uso Interior y Exterior",
-            features: [
-                {name: "3 micro aspersores nebulizadores",
-                icon: `iconList.png`},
-                {name: "Tanque integrado de 10lt de capacidad. (equivalente a 200 accionamientos)",
-                icon: `iconList.png`},
-                {name: "Sensor de movimiento y activación automática.",
-                icon: `iconList.png`},
-                {name: "Bomba periférica de alta calidad",
-                icon: `iconList.png`},
-                {name: "Instalación eléctrica con llave termo-magnética. ",
-                icon: `iconList.png`},
-                {name: "Protocolo de acceso de 3 pasos. ",
-                icon: `iconList.png`},
-            ],
-            img: `ejemploTotemSilueta.jpg`,
-            },
-           
-         cabina: {
-            tittle: "CABINA PEC 318",
-            text: "Módulo Sanitizante - Uso Interior y Exterior",
-            features: [
-                {name: "6 micro aspersores nebulizadores.",
-                icon: `fas fa-circle`},
-                {name: "Tanque integrado de 50 o 100lt de capacidad. (equivalente a 900 accionamientos)",
-                icon: `fas fa-circle`},
-                {name: "Alfombra antideslizante y sanitizante.",
-                icon: `fas fa-circle`},
-                {name: "Sensor de movimiento y activación automática.",
-                icon: `fas fa-circle`},
-                {name: "Bomba periférica de alta calidad.",
-                icon: `fas fa-circle`},
-                {name: "Instalación eléctrica con llave termo magnética.",
-                icon: `fas fa-circle`},
-                {name: "Indicadores de ingreso y egreso",
-                icon: `fas fa-circle`},
-                {name: "Iluminación Led interior",
-                icon: `fas fa-circle`},
-                {name: "Protocolo de acceso de 3 pasos",
-                icon: `fas fa-circle`},
-                ],
-            img: `ejemploCabina.jpg`,
-             }
-    }  
-    
-
-    
+    let contenidoModal = [
+                    {
+                        id: "porticopec",
+                        title: "PÓRTICO PEC 316",
+                        text: "Módulo Sanitizante - Uso Interior y Exterior",
+                        img: `ejemploPortico.jpg`,
+                        cardData: {
+                            class: "card-back-img-1",
+                            description: 'Construido en aluminio compuesto de máxima calidad, inalterable en el tiempo. Este material cuenta con mejores propiedades que el acero inoxidable calidad 430.',
+                            name: "Portico"
+                        },
+                        features: [
+                            {name: "6 micro aspersores nebulizadores.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Tanque integrado de 10 lt de capacidad. (equivalente a 100 accionamientos)",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Alfombra antideslizante y sanitizante",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Sensor de movimiento y activación automática",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Bomba periférica de alta calidad.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Instalación eléctrica con llave termo magnética.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Protocolo de acceso de 3 pasos.",
+                            icon: `./img/assets/icoList.png`},
+                            ], 
+                    },
+                    {
+                        id: "totempec",
+                        title: "TOTEM PEC 314",
+                        text: "Módulo Sanitizante - Uso Interior y Exterior",
+                        img: `ejemploTotemSilueta.jpg`,
+                        cardData: {
+                            class: "card-back-img-0",
+                            description: 'Construido en aluminio compuesto de máxima calidad, inalterable en el tiempo. Este material cuenta con mejores propiedades que el acero inoxidable calidad 430.',
+                            name: "Totem"
+                        },
+                        features: [
+                            {name: "3 micro aspersores nebulizadores",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Tanque integrado de 10lt de capacidad. (equivalente a 200 accionamientos)",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Sensor de movimiento y activación automática.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Bomba periférica de alta calidad",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Instalación eléctrica con llave termo-magnética. ",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Protocolo de acceso de 3 pasos. ",
+                            icon: `./img/assets/icoList.png`},
+                        ],
+                    },
+                    {
+                        id:"cabinapec",
+                        title: "CABINA PEC 318",
+                        text: "Módulo Sanitizante - Uso Interior y Exterior",
+                        img: `ejemploCabina.jpg`,
+                        cardData: {
+                            class: "card-back-img-2",
+                            description: 'Construido en aluminio compuesto de máxima calidad, inalterable en el tiempo. Este material cuenta con mejores propiedades que el acero inoxidable calidad 430.',
+                            name: "Cabina"
+                        },
+                        features: [{
+                            name: "6 micro aspersores nebulizadores.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Tanque integrado de 50 o 100lt de capacidad. (equivalente a 900 accionamientos)",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Alfombra antideslizante y sanitizante.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Sensor de movimiento y activación automática.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Bomba periférica de alta calidad.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Instalación eléctrica con llave termo magnética.",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Indicadores de ingreso y egreso",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Iluminación Led interior",
+                            icon: `./img/assets/icoList.png`},
+                            {name: "Protocolo de acceso de 3 pasos",
+                            icon: `./img/assets/icoList.png`},
+                            ],
+                    }
+    ]
