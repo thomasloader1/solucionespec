@@ -1,15 +1,19 @@
+.position-absolute.right-0.bottom-0.z-index-6
+    img(src="./img/assets/linea_covid__19_vertical.png", alt="COVID-19").img-fluid
+//- .position-absolute.absolute-portico
+//-     img(src="./img/assets/Porticos_PEC-30.png", alt="Portico").img-fluid
 .row
     .col-12.text-center
-        h2.open-sans-700.text-uppercase Modulos Sanitizantes
-        p.open-sans-300 Excelente solución para incrementar las medidas de higiene en el ingreso a aquellos espacios de alta circulación tales como:   
-.row.mt-0
+        h2.open-sans-700.text-uppercase MÓDULOS SANITIZANTES
+        p.open-sans-300.mb-0 Creamos productos que garantizan la disminución de la propagación del virus COVID-19. 
+        span.open-sans-300 Los módulos sanitizantes son una excelente solución para incrementar las medidas de higiene en el ingreso a aquellos espacios de alta circulación tales como: 
     .col-12
         ul.list-unstyled.d-flex.flex-wrap.justify-content-center
             +getListado(listados.primero)
 .row
     .col-12
-        ul.list-unstyled  
-            +getListado(listados.segundo)
+        ul.list-unstyled.mb-5
+            +getListadoCheck(listados.segundo)
 .row
     .col-12
         p Nuestros diseños se incorporan de manera fácil a cualquier lugar en donde haya ingreso de personas. Mediante el uso de micro aspersores, se impulsa una solución sanitizante inocua, incolora e inodora diluida en agua que cubre el 100% de la superficie corporal. Quedando en sólo 5 segundos cubierto con una barrera anti bacterial garantizada
@@ -19,10 +23,3 @@
     .col-12
         ul.list-unstyled    
             +getListado(listados.tercero)
-        
-
-+card(contenidoModal)
-
-+modal(contenidoModal)
-//- +card(contenidoModal.portico)
-//- +card(contenidoModal.cabina)

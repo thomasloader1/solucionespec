@@ -16,3 +16,17 @@
         border-radius: 0.7rem;
     }
 }
+
+#modulos-sanitizantes{
+    position: relative;
+
+    .absolute{
+        &-portico{
+            top: 10%;
+            left: 10%;
+            z-index: -1;
+            max-width: 200px;
+            opacity: 0.2;
+        }
+    }
+}

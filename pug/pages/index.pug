@@ -3,10 +3,14 @@ block append config
     - titlePage = "Inicio"
 
 block append content
-    section#nosotros.d-flex.aling-items-center
-        include nosotros.pug
-    section#modulos-sanitizantes.open-sans 
+    section#home
+        include home.pug
+    section#modulos-sanitizantes
         .container.py-3
             include modulos.pug
+    section#productos-buscador
+        include productos.pug
+    section#nosotros.d-flex.aling-items-center
+        include nosotros.pug
     section#contacto.d-flex.align-items-center
             include contacto.pug

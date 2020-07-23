@@ -1,0 +1,24 @@
+#home{
+    //@include setImage("img-inicio.jpg");
+    height: 90vh;
+}
+
+.home{
+    &-first{
+        margin:{
+            top: 15vh ;
+            bottom: 10vh;
+        }
+        h1{
+            
+            text-shadow: 3px 3px 7px rgba($color: #000000, $alpha: 0.3);
+        }
+        h2{            
+            text-shadow: 3px 3px 5px rgba($color: #000000, $alpha: 0.5);
+            margin: {
+                top: 1rem;
+                bottom: 1rem;
+            }
+        }
+    }
+}

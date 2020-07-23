@@ -1,12 +1,24 @@
 mixin getListado(objLista)
         each obj in objLista
-            .d-flex.align-items-center.justify-content-center
+            .d-flex.align-items-center.justify-content-center.mt-3.item-list
                 if(obj.icon != "fas fa-circle")
                     img(src=`${obj.icon}`, alt="", width="30", height="30").p-1
                 else
                     i(class=`${obj.icon} fa-xs text-info`)
 
-                li.ml-2.mr-3.my-3.open-sans-700= obj.name 
+                li.ml-2.mr-3.my-3
+                    p.m-0.open-sans-300= obj.name 
+
+mixin getListadoCheck(objLista)
+        each obj in objLista
+            .d-flex.align-items-center.justify-content-start.item-list-check
+                if(obj.icon != "fas fa-circle")
+                    img(src=`${obj.icon}`, alt="", width="30", height="30").p-1
+                else
+                    i(class=`${obj.icon} fa-xs text-info`)
+
+                li.ml-2.mr-3.my-3
+                    p.m-0.open-sans-300= obj.name 
 
 mixin getListadoModal(obj)
         .d-flex.align-items-center.justify-content-start
