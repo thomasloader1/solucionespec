@@ -30,25 +30,24 @@ mixin getListadoModal(obj)
 
 
 mixin contactForm()
-    <form class="text-center white p-3 rounded-lg open-sans z-depth-2" action="#!">
-        <p class="h4 mb-4">Contacto</p>
-        <input type="text" id="contact-name" class="form-control mb-4" placeholder="Nombre">
-        <input type="email" id="contact-email" class="form-control mb-4" placeholder="E-mail">
-        <label>Asunto</label>
-        <select class="browser-default custom-select mb-4">
-            <option value="" disabled>Elegir una opcion</option>
-            <option value="1" selected>Consulta</option>
-            <option value="2">Trabajo a realizar</option>
-        </select>
-        <div class="form-group">
-            <textarea class="form-control rounded-0" id="contact-message" rows="3" placeholder="Mensaje"></textarea>
-        </div>
-        <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-            <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
-        </div>
-        <button class="btn btn-info btn-block" type="submit">Enviar</button>
-    </form>
+    form.text-center.white.p-3.rounded-lg.open-sans.z-depth-2(action="#!")
+        //  Material input 
+        .md-form
+            input#contact-name.form-control(type="text")
+            label(for="contact-name") NOMBRE COMPLETO
+        .md-form
+            input#contact-email.form-control(type="email")
+            label(for="contact-name") EMAIL
+        .md-form
+            input#contact-prov.form-control(type="text")
+            label(for="contact-name") PROVINCIA
+        .md-form
+            input#contact-phone.form-control(type="number")
+            label(for="contact-name") TELEFONO
+        .custom-control.custom-checkbox.mb-4
+            input.custom-control-input#defaultContactFormCopy(type="checkbox")
+            label.custom-control-label.font-small(for="defaultContactFormCopy") ESTOY DE ACUERDO A QUE USEN MI DATOS PARA COMUNICARSE CONMIGO
+        button.btn.btn-info.btn-block(type="submit") Enviar
 
 
 mixin modal(fullProduct)

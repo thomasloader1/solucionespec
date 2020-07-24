@@ -1,0 +1,27 @@
+#grid-productos{
+    @media (min-width: 1199px){
+        grid-template: {
+            columns: repeat(2, 1fr);
+            rows: repeat(3, 80px)
+        }
+    }
+
+    .grid-productos{
+        &-1{
+            grid: {
+                column: 1 / 2;
+                row: 2 / 3;
+            }
+            align-self: center;
+            justify-self: center;
+        }
+        &-2{
+            grid: {
+                column: 2 / 3;
+                row: 1 / 4;
+            }
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}

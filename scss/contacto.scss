@@ -1,15 +1,17 @@
-#contacto{
-    @include setImageWithMask("constructora.png");
-    &-grid{
-        position: relative;
-        z-index: 5;
-        display: grid;
-        grid-template: {
-            columns: 1fr;
-            rows: 100%;
-            
-        }
-        align-items: center;
-        justify-items: center;
+#grid-contacto{
+    display: grid;
+    grid-template:{
+        columns: repeat(2, 1fr);
+        rows: 1fr
+    };
+
+    .grid-title{
+        align-self: center;
+        justify-self: center;
+    }
+    .grid-form{
+        padding: 50px;
+        align-self: center;
+        justify-self: center;
     }
 }

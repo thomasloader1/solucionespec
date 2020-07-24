@@ -1,0 +1,35 @@
+#grid-clientes{
+    display: grid;
+    grid-template: {
+        columns: 1fr 50%;
+        rows: 1fr;
+    }
+    .img-clientes{
+        background: {
+            image: url("../img/assets/Img_fondo_clientes.jpg");
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+        min-height: 600px;
+        position: relative;
+        z-index: 4;
+        grid: {
+            column: 1 / 3;
+            row: 1 / 2
+        }
+    }
+    .text-clientes{
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        grid: {
+            column: 2 / 3;
+            row: 1 / 2
+        }
+        align-self: center;
+        justify-self: center;
+
+    }
+}
